@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kategoris",
+  "info": {
+    "name": "Kategori"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "hizmetlerimizs": {
+      "via": "kategoris",
+      "collection": "hizmetlerimiz",
+      "dominant": true
+    }
+  }
+}
